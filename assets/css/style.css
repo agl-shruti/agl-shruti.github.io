@@ -1,0 +1,231 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  font-size: 16px;
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── OUTER PAGE ──────────────────────────── */
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 52px 40px 96px;
+  display: grid;
+  grid-template-columns: 272px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ── LEFT COLUMN ─────────────────────────── */
+.left-col {
+  position: sticky;
+  top: 48px;
+}
+
+.name {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background: #e5e7eb;
+  margin-bottom: 18px;
+}
+
+.affil {
+  font-size: 0.875rem;
+  color: #222222;
+  line-height: 1.9;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #2563eb;
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+/* ── RIGHT COLUMN ────────────────────────── */
+.right-col {}
+
+/* ── BIO ─────────────────────────────────── */
+.bio {
+  margin-bottom: 36px;
+}
+
+.bio p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #111111;
+  margin-bottom: 14px;
+}
+.bio p:last-child { margin-bottom: 0; }
+
+.bio strong {
+  font-weight: 700;
+  color: #000000;
+}
+
+.cv-link {
+  font-size: 1rem;
+  color: #2563eb;
+  font-weight: 400;
+}
+
+/* ── SECTION HEADING ─────────────────────── */
+.section-head {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.02em;
+  margin: 40px 0 24px;
+  line-height: 1.2;
+}
+
+/* ── PAPER ───────────────────────────────── */
+.paper {
+  margin-bottom: 32px;
+}
+
+.paper-title {
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+
+.paper-title a {
+  color: #2563eb;
+  font-weight: 500;
+}
+.paper-title a:hover { text-decoration: underline; }
+
+.pdf-note {
+  font-size: 0.9rem;
+  color: #2563eb;
+  font-weight: 400;
+}
+
+.paper-sub {
+  font-size: 0.9rem;
+  color: #444444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.paper-sub em {
+  font-style: italic;
+  color: #444444;
+}
+.paper-sub a {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.abstract {
+  background: #f7f7f5;
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.72;
+  color: #222222;
+  font-weight: 300;
+}
+
+/* ── RESPONSIVE ──────────────────────────── */
+@media (max-width: 720px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding: 32px 20px 64px;
+    gap: 36px;
+  }
+  .left-col { position: static; }
+  .photo { max-width: 220px; }
+  .name { font-size: 1.6rem; }
+}
+
+
+/* v17: paper titles are not clickable/underlined while PDFs are not attached */
+.paper-title,
+.paper-title a {
+  text-decoration: none !important;
+}
+
+.paper-note {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: 13.2px;
+  line-height: 1.4;
+}
+
+
+/* v18: wider abstract boxes to avoid long narrow text blocks */
+.abstract {
+  max-width: 620px !important;
+  width: 100%;
+}
+
+.paper {
+  max-width: 680px;
+}
+
+
+/* v19: slightly broader right column and abstract boxes */
+.content,
+.main-content,
+.right {
+  max-width: 760px !important;
+}
+
+.abstract {
+  max-width: 700px !important;
+  width: 100%;
+}
+
+.paper {
+  max-width: 740px !important;
+}
+
+
+/* v20: Vishan-style blue paper titles and subtle presentation note */
+.paper-title {
+  color: #1155cc !important;
+  font-weight: 700;
+}
+
+.paper-title a {
+  color: #1155cc !important;
+  text-decoration: none !important;
+}
+
+.paper-note {
+  color: #555 !important;
+  font-size: 13.2px !important;
+  line-height: 1.4 !important;
+  margin: 8px 0 0 !important;
+  padding-left: 10px;
+  border-left: 2px solid #d8e4f5;
+}
+
+
+/* v21: homepage stage/about update and Uganda separated as Other Work */
+.other-work-head {
+  margin-top: 34px !important;
+}

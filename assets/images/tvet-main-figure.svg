@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 410">
+  <rect width="680" height="410" fill="#ffffff"/>
+  <rect x="50" y="44" width="580" height="305" fill="#fafafa" stroke="#d8dde2"/>
+  
+        <line x1="80" y1="300" x2="560" y2="300" stroke="#2d4053" stroke-width="2"/>
+        <rect x="120" y="215" width="55" height="85" fill="#b8c8d7"/>
+        <rect x="205" y="172" width="55" height="128" fill="#819bb2"/>
+        <rect x="290" y="124" width="55" height="176" fill="#284661"/>
+        <rect x="375" y="198" width="55" height="102" fill="#cbd8e2"/>
+        
+  <text x="78" y="78" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#5f666d" letter-spacing="2">MAIN FIGURE</text>
+  <text x="78" y="378" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#22313f">TVET preferences in Saudi Arabia</text>
+</svg>

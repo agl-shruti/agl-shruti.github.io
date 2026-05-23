@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 410">
+  <rect width="680" height="410" fill="#ffffff"/>
+  <rect x="50" y="44" width="580" height="305" fill="#fafafa" stroke="#d8dde2"/>
+  
+        <path d="M140,218 C180,135 290,142 350,92 C430,30 540,105 582,188 C632,286 520,348 410,342 C330,336 280,287 218,312 C160,335 104,288 140,218Z" fill="#e3e7ea" stroke="#284661" stroke-width="4"/>
+        <circle cx="250" cy="215" r="9" fill="#284661"/>
+        <circle cx="365" cy="160" r="9" fill="#284661"/>
+        <circle cx="465" cy="242" r="9" fill="#284661"/>
+        
+  <text x="78" y="78" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#5f666d" letter-spacing="2">MAIN FIGURE</text>
+  <text x="78" y="378" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#22313f">Climate and education in Uganda</text>
+</svg>
